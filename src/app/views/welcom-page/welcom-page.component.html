@@ -1,0 +1,64 @@
+<!-- <div class="main-container">
+    <div class="col-12" class="container">
+        <div>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" style="font-size:25px;">WELCOME</a>
+                  </div>
+                </div>
+            </nav>
+        </div>
+        <div>
+            <h3 style="color: white;">SELECT YOUR LANGUAGE</h3>
+        </div>
+        <div class="col-12 col-3" class="button-panel" align="center">
+            <button id="btnsinhala" type="button" class="mat-button"(click)="setLang('sinhala')"  (click)="    toggle()">සිංහල</button><br><br>
+            <button id="btnEnglish" type="button" class="mat-button" (click)="setLang('en')"    (click)="toggle()">ENGLISH</button><br><br>
+            <button id="btnTamil" type="button" class="mat-button" (click)="setLang('tamil')"  (click)="toggle()">தமிழ்</button><br><br>
+          </div>
+    </div>
+    <div class="col-12" class="cont">
+        <ng-container *ngIf="show">
+            <div class="wrapper">
+                <div class="grid-items">{{ 'TITLE' | translate }}! </div>
+                <div class="grid-items"> {{ 'TITL' | translate }}!</div>
+                <div class="grid-items"> {{ 'TIT' | translate }}!</div>
+                <div class="grid-items"> {{ 'TI' | translate }}!</div>
+              </div><br><br><br><br>
+              <div class="col-12" class="proceed" align="center">
+                <button id="btnProceed" type="button" class="mat-button">PROCEED</button>
+            </div>
+        </ng-container>
+    </div>
+</div> -->
+<body>
+    <div class="header">
+        <h1>WELCOME</h1>
+        <p>SELECT YOUR LANGUAGE</p>
+      </div><br>
+      <div class="row">
+        <ng-container *ngIf="hide">
+            <div class="column">
+                <div class="wrapper">
+                <button type="button" class="btn btn-primary btn-lg" (click)="setLang('sinhala')" (click)="toggle()"
+                (click)="toggle2()">සිංහල</button><br><br>
+                <button type="button" class="btn btn-primary btn-lg" (click)="setLang('en')" (click)="toggle()"
+                (click)="toggle2()">ENGLISH</button><br><br>
+                <button type="button" class="btn btn-primary btn-lg" (click)="setLang('tamil')" (click)="toggle()"
+                (click)="toggle2()">தமிழ்</button><br><br>
+                </div>
+            </div>
+        </ng-container>
+        <div class="column">
+            <ng-container *ngIf="show">
+                <div class="wrapper">
+                    <button type="button" class="btn btn-primary btn-lg">{{ 'TITLE' | translate }}! </button><br><br>
+                    <button type="button" class="btn btn-primary btn-lg"> {{ 'TITL' | translate }}!</button><br><br>
+                    <button type="button" class="btn btn-primary btn-lg">{{ 'TIT' | translate }}!</button><br><br>
+                    <button type="button" class="btn btn-primary btn-lg"> {{ 'TI' | translate }}!</button><br><br>
+                  </div>
+            </ng-container>
+        </div>
+      </div>
+</body>

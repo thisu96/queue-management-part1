@@ -1,0 +1,276 @@
+/* *{
+  box-sizing: border-box;
+}
+
+.main {
+  font-family: sans-serif;
+}
+
+.mat-toolbar{
+background-color: blue;
+}
+
+div.mat-toolbar{
+margin: auto;
+}
+
+div.h3{
+margin: auto;
+}
+
+.mat-toolbar-row{
+align-content: center;
+text-align: center;
+}
+
+.mat-button{
+height: 50px;
+width: 220px;
+text-align: center;
+}
+
+.button-panel{
+margin-top: 10%;
+margin-left: 43%;
+}
+
+.proceed{
+margin-top: 10%;
+}
+
+#btnProceed{
+background-color: white;
+text-align: center;
+width: 80%;
+}
+
+#btnsinhala{
+background-color: white;
+}
+
+#btnEnglish{
+background-color: white;
+}
+
+#btnTamil{
+background-color: white;
+}
+
+#btnWrap{
+  background-color: white;
+}
+
+div.button-panel{
+margin: auto;
+}
+
+div.proceed{
+margin: auto;
+}
+
+div.container{
+  margin: auto;
+}
+
+div.wrapper{
+  margin: auto;
+}
+/* .container {
+display: flex;
+flex-gap: 5px;
+grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+grid-template-rows: repeat(2, 100px);
+} */ 
+/*
+.main-container{
+  max-width: 100%;
+  margin: 40px auto 0 auto;
+  display: flex;
+  background-color: blue;
+}
+
+.container{
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+  flex: 2;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.cont{
+  padding: 20px;
+  margin: auto;
+  flex: 2;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container:nth-child(1){background-color: blue;}
+
+
+.navbar{
+  max-width: 100%;
+  background-color: blue;
+  }
+  
+  .navbar-header {
+  float: left;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  }
+  .navbar-brand {
+    float:none;
+    color: white;
+  }
+
+  .aside {
+    background-color: #33b5e5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+
+  .wrapper {
+    margin-top: 20%;
+    margin: auto;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 300px 300px;
+    grid-gap: 30px;
+    color: #444;
+  }
+  
+  .grid-items {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+  }
+
+  .main-container{
+    margin-top: auto;
+    margin: auto;
+  }
+
+  div.container{
+    margin: auto;
+  }
+
+  div.wrapper{
+    margin: auto;
+    margin-top: 25%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+  div.button-panel{
+    margin-top: 12%;
+  }
+
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    /*
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    /*
+    [class*="col-"] {
+      width: 100%;
+    }
+  } 
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.grid-items {
+  background-color: rgb(38, 90, 166);
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.btn-lg{
+  width: 300px;
+  height: 50px;
+  text-align: center;
+}
